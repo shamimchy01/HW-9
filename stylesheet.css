@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* common css start*/
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+body{
+    font-family: "Open Sans", sans-serif;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.align-center{
+    align-items: center;
+}
+.btn{
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 14px;
+    background-color: #cfc91d;
+    display: inline-block;
+    padding: 19px 43px;
+}
+.heading h2{
+    font-weight: 800;
+    color: #02918c;
+    font-size: 46px;
+    text-transform: uppercase;
+}
+.heading p{
+    color: #7e8287;
+    margin: 15px 0px;
+}
+.sectiontitle p{
+    color: #7e8287;
+    line-height: 30px;
+}
+.sectiontitle p span{
+    font-weight: 800;
+    font-size: 23px;
+
+}
+.card span{
+    color: #02918c;
+    font-size: 30px;
+}
+
+.card h4{
+    color: #7e8287;
+    font-size: 16px;
+    font-weight: 800;
+    margin: 25px 0px;
+}
+
+.card p{
+    color: #7e8287;
+    font-size: 11px;
+    
+}
+/* common css end*/
+
+
+/* Nav Bar Starts*/
+nav{
+    background-color:#02918c;
+}
+nav .logo{
+    width: 30%;
+ 
+}
+nav .menu{
+    width: 70%;
+    text-align: right;
+}
+
+nav .menu ul li{
+    display: inline-block;
+    position: relative;
+}
+nav .menu ul li a{
+    color: white;
+    font-weight: 800;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 26px 25px;
+    display: inline-block;
+}
+nav ul li .sub-menu{
+    position: absolute;
+    border: 1px solid #ccc;
+    opacity: 0;
+    visibility: hidden;
+    transition: 300ms;
+    bottom: 1;
+} 
+nav ul li:hover .sub-menu{
+    opacity: 1;
+    visibility: visible;
+}
+nav ul li .sub-menu li{
+    display: block;
+    background-color: #02918c;
+}
+nav ul li .sub-menu li a{
+    color: #222;
+    padding: 10px;
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+/* Nav Bar ends*/
+
+/* Banner Starts*/
+#banner{
+    background-image: url(./images/banner.jpg);
+    height: 728px;
+    background-size: cover;
+    background-position:center ;
+    color:white;
+    text-align: center;
+}
+#banner .row{
+    height: 100%;
+}
+#banner .banner-cnt{
+    
+    width: 100%;
+}
+#banner .banner-cnt h5{
+    font-size: 30px;
+    font-weight: 400;
+}
+#banner .banner-cnt h1{
+    font-size: 68px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 30px;
+   
+}
+#banner .banner-cnt img{
+    margin: 50px 0;
+}
+/* Banner ends*/
+
+/* About Us Starts*/
+#about{
+    padding: 98px 0px;
+    text-align: center;
+}
+#about .aboutcards{
+    margin-top: 80px;
+}
+#about .aboutcards .card{
+    width: 25%;
+    border-right: 1px solid #d9dbdb;
+    padding: 35px 0;
+    transition: 0.6s;
+   
+}
+#about .aboutcards .card:last-child{
+    border: none;
+    
+}
+#about .aboutcards .card:hover{
+    transform:translateY(-20px)
+}
+/* About Us Ends*/
